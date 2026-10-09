@@ -3,8 +3,8 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1 cm, % seperation between body and page edge from the top
-    bottom=1 cm, % seperation between body and page edge from the bottom
+    top=0.5 cm, % seperation between body and page edge from the top
+    bottom=0.5 cm, % seperation between body and page edge from the bottom
     left=1.85 cm, % seperation between body and page edge from the left
     right=1.85 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
@@ -180,8 +180,8 @@
 
     \vspace{5 pt - 0.3 cm}
 
-    % \section{Summary}
-    % Postdoctoral researcher specializing in AI for Science and HPC, with a focus on data-driven surrogate modelling for scientific computing. Passionate about developing AI methodologies from a data-centric and compute efficiency perspective and applying them to impactful real-world problems. I believe in the importance of interdisciplinary collaboration, open and inclusive science, and reproducible research. 
+    \section{Summary}
+    Postdoctoral researcher in \textbf{AI for Science and HPC}, specialising in data-driven surrogate modelling for scientific computing from data-centric and compute efficiency perspectives (\textbf{active learning, PINNs, distributed streamed training, foundation models}). 
 
     \section{Work Experience}
 
@@ -192,8 +192,8 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Developed novel active learning methodology for deep PDE surrogates: created method for PINNs outperforming existing approaches (offline), pioneered extension to online setting for data-driven surrogates where training occurs concurrently with running simulations --- improving training efficiency and reducing simulation costs.
-                \item Extended open-source HPC\&AI framework \hrefWithoutArrow{https://gitlab.inria.fr/melissa/melissa}{Melissa}; supervised 2 engineers and 2 master students internships (Feb -- Sep 2025) contributing to the project.
+                \item Developed active learning for deep PDE surrogates: an offline PINN method that outperformed prior baselines [3], and a pioneering online framework that improves generalisation by choosing the right data during training [1,2].
+                \item Extended open-source HPC\&AI framework \hrefWithoutArrow{https://gitlab.inria.fr/melissa/melissa}{Melissa}; supervised 2 engineers and 2 master's students contributing to the project.
                 % \item Publications: 2 first-author workshop papers (NeurIPS'23, SC'24), 1 under review.
             \end{highlights}
         \end{onecolentry}
@@ -207,7 +207,7 @@
         \vspace{0.05 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Continued research on optimal transport algorithms from master's thesis; explored extensions to computational geometry applications and computer vision tasks.
+                \item Extended master's thesis work on optimal transport to computational geometry and computer vision.
             \end{highlights}
         \end{onecolentry}
 
@@ -220,7 +220,7 @@
         \vspace{0.05 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Developed and trained generative models with attention mechanisms for audio processing and personalized noise reduction; contributed to R\&D pipeline development in a product team environment.
+                \item Trained generative attention models for personalized noise reduction in audio.
             \end{highlights}
         \end{onecolentry}
 
@@ -245,7 +245,7 @@
         \vspace{0.1 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Thesis: High Performance Online Deep Neural Network Training from Synthetic Data with Active Learning for Scientific Computing. The manuscript is rated "Outstanding" (top 5\%) by external reviewer. \href{https://svdcvt.github.io/phddefence/}{[link]}.
+                \item Thesis: High Performance Online Deep Neural Network Training from Synthetic Data with Active Learning for Scientific Computing. The manuscript is rated ``Outstanding'' (top 5\%) by an external reviewer \href{https://svdcvt.github.io/phddefence/}{[link]}.
                 % \item Research focus: AI4Science and HPC, physics-informed neural networks, data-centric AI.
             \end{highlights}
         \end{onecolentry}
@@ -270,31 +270,30 @@
             \textbf{BSc in Mathematics}, Moscow, Russia
         \end{twocolentry}
             Faculty of Mathematics, HSE (GPA: 7.87/10); Minor in Data Science, Faculty of Computer Science, HSE
-        \vspace{0.05 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Thesis: Collected and preprocessed 10-hours noisy YouTube dataset from scratch for rare languages multi-classification; trained multimodal CNN-RNN models achieving 77.6\% accuracy \hrefWithoutArrow{https://drive.google.com/file/d/1rkIUd2kjUYFmPsmkdUjKxfgaNsbIka4g/view?usp=sharing}{[link]}. 
-            \end{highlights}
-        \end{onecolentry}
+        % \vspace{0.05 cm}
+        % \begin{onecolentry}
+        %     \begin{highlights}
+        %         \item Thesis: Collected and preprocessed 10-hours noisy YouTube dataset from scratch for rare languages multi-classification; trained multimodal CNN-RNN models achieving 77.6\% accuracy \hrefWithoutArrow{https://drive.google.com/file/d/1rkIUd2kjUYFmPsmkdUjKxfgaNsbIka4g/view?usp=sharing}{[link]}. 
+        %     \end{highlights}
+        % \end{onecolentry}
 
     \section{Publications}
         \begin{onecolentry}
             \begin{highlightsforbulletentries}
-                \item \bibentry{underreview} \hrefWithoutArrow{https://arxiv.org/pdf/2606.09949}{[preprint]}
-                \item \bibentry{dymchenkoMelissaDLBreedDataEfficient2024} \hrefWithoutArrow{https://hal.science/hal-04712480/}{[paper]} \hrefWithoutArrow{https://youtu.be/WUfa6SunwGc?si=zjwIf1VKYd00T9lH}{[video]}
-                \item \bibentry{dymchenkoLossdrivenSamplingHardtolearn2023} \hrefWithoutArrow{https://hal.science/hal-04305233/}{[paper]}
+                \item[[1\hspace{-0.5em}]] \bibentry{cesarLearningWhereSimulateGenerative2026} \hrefWithoutArrow{https://arxiv.org/pdf/2606.09949}{[paper]}
+                \item[[2\hspace{-0.5em}]] \bibentry{dymchenkoMelissaDLBreedDataEfficient2024} \hrefWithoutArrow{https://hal.science/hal-04712480/}{[paper]} \hrefWithoutArrow{https://youtu.be/WUfa6SunwGc?si=zjwIf1VKYd00T9lH}{[video]}
+                \item[[3\hspace{-0.5em}]] \bibentry{dymchenkoLossdrivenSamplingHardtolearn2023} \hrefWithoutArrow{https://hal.science/hal-04305233/}{[paper]}
             \end{highlightsforbulletentries}
         \end{onecolentry}
 
     \section{Additional Experience \& Skills}
         \begin{onecolentry}
             \begin{highlights}
-                \item Teaching \& \textbf{leadership} (2019--2024): Led Python course (3 years, 100+ students); curriculum design, TA supervision, assessment, and lectures; “Best Course” award (2020). Delivered seminars in Data Science, Machine Learning, and Python to students from diverse backgrounds  (BSc/MSc/professional) at HSE and UGA.
-                \item Event \textbf{organization}: poster moderator, on-site support, outreach for Grenoble AI for Physical Sciences workshop \hrefWithoutArrow{https://gap2024.sciencesconf.org}{[2024]}\hrefWithoutArrow{https://indico.math.cnrs.fr/event/15724/}{[2026]}; local events (LIG).
-                \item Academic \& community \textbf{service}: reviewing for Workshop on Advancing Neural Network Training at NeurIPS23 and ICML24; engagement in doctoral school student council (UGA) and laboratory synergy initiatives (LIG); volunteering in animal shelter (SPA) and bird protection organization (LPO).
+                \item Teaching (2019--2024): led Python course (3 years, 100+ students) incl. curriculum, TA supervision, lectures, ``Best Course'' award (2020); taught Data Science/ML seminars (HSE, UGA).
+                \item Academic \& community service: on-site organisation and outreach for Grenoble AI for Physical Sciences workshop \hrefWithoutArrow{https://gap2024.sciencesconf.org}{[2024]}\hrefWithoutArrow{https://indico.math.cnrs.fr/event/15724/}{[2026]}; reviewer for Workshop on Advancing Neural Network Training (NeurIPS'23, ICML'24); member of doctoral school student council (UGA), laboratory synergy (LIG); animal protection associations volunteer.
             \end{highlights} 
         \end{onecolentry}
-        \vspace{0.05 cm}
+        \vspace{0.2 cm}
         \begin{onecolentry}
             \textbf{Technical skills:} Python (PyTorch, JAX), Git, Bash, SLURM, Linux/HPC environments, C{+\!+} (basic), \LaTeX.
         \end{onecolentry}
