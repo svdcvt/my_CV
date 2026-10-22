@@ -5,8 +5,8 @@
     ignoreheadfoot, % set margins without considering header and footer
     top=0.5 cm, % seperation between body and page edge from the top
     bottom=0.5 cm, % seperation between body and page edge from the bottom
-    left=1.85 cm, % seperation between body and page edge from the left
-    right=1.85 cm, % seperation between body and page edge from the right
+    left=1.8 cm, % seperation between body and page edge from the left
+    right=1.8 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
@@ -181,7 +181,7 @@
     \vspace{5 pt - 0.3 cm}
 
     \section{Summary}
-    Postdoctoral researcher in \textbf{AI for Science and HPC}, specialising in data-driven surrogate modelling for scientific computing from data-centric and compute efficiency perspectives (\textbf{active learning, PINNs, distributed streamed training, foundation models}). 
+    Applied researcher in \textbf{AI for Science and HPC}, specialising in data-driven surrogate modelling for scientific computing from data-centric and compute efficiency perspectives (\textbf{active learning, PINNs, distributed streamed training, foundation models}). 
 
     \section{Work Experience}
 
@@ -192,8 +192,13 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Developed active learning for deep PDE surrogates: an offline PINN method that outperformed prior baselines [3], and a pioneering online framework that improves generalisation by choosing the right data during training [1,2].
-                \item Extended open-source HPC\&AI framework \hrefWithoutArrow{https://gitlab.inria.fr/melissa/melissa}{Melissa}; supervised 2 engineers and 2 master's students contributing to the project.
+                \item Pioneered a research line on query-synthetic active learning for online training of deep PDE surrogates, contributing to the active sampling branch of \hrefWithoutArrow{https://gitlab.inria.fr/melissa/melissa}{Melissa}, an open-source HPC\&AI framework.
+                \item Designed and implemented method Breed [2] that improves generalisation of a data-driven surrogate under limited computed budget by asynchronously curating data generation during training, experiments showing up to a magnitude lower maximum and average errors for 1D Kuramoto-Sivashinsky PDEs; orchestrated large-scale GPU training runs on Leonardo supercomputer.
+                \item Proposed online generative active learning and contributed to diffusion-based OGAS method [1], which lowers high-percentile errors by up to 2x, outperforming pool-based baselines for transformer-based and neural operator surrogates on various 2D PDEs at 256$^2$ spatial resolution, e.g., Navier-Stokes.
+                \item Introduced an active sampling method for PINNs training [3], which outperformed prior baselines by reducing training time by up tp 5x and lowering average errors by up to 2x for 1D Allen-Cahn PDE.
+                \item Supervised 2 engineers and 2 master's students contributing to the Melissa framework, including project on online pretraining of foundation models for PDE surrogates.
+                % \item Contributed to an open-source HPC\&AI framework \hrefWithoutArrow{https://gitlab.inria.fr/melissa/melissa}{Melissa}; supervised 2 engineers and 2 master's students contributing to the project.
+                % \item Developed active learning methods for deep PDE surrogates: an offline PINN training strategy that outperformed prior baselines [3], and a pioneering online framework that improves generalisation of a data-driven surrogate by curating data during training [1,2]. 
                 % \item Publications: 2 first-author workshop papers (NeurIPS'23, SC'24), 1 under review.
             \end{highlights}
         \end{onecolentry}
@@ -277,15 +282,6 @@
         %     \end{highlights}
         % \end{onecolentry}
 
-    \section{Publications}
-        \begin{onecolentry}
-            \begin{highlightsforbulletentries}
-                \item[[1\hspace{-0.5em}]] \bibentry{cesarLearningWhereSimulateGenerative2026} \hrefWithoutArrow{https://arxiv.org/pdf/2606.09949}{[paper]}
-                \item[[2\hspace{-0.5em}]] \bibentry{dymchenkoMelissaDLBreedDataEfficient2024} \hrefWithoutArrow{https://hal.science/hal-04712480/}{[paper]} \hrefWithoutArrow{https://youtu.be/WUfa6SunwGc?si=zjwIf1VKYd00T9lH}{[video]}
-                \item[[3\hspace{-0.5em}]] \bibentry{dymchenkoLossdrivenSamplingHardtolearn2023} \hrefWithoutArrow{https://hal.science/hal-04305233/}{[paper]}
-            \end{highlightsforbulletentries}
-        \end{onecolentry}
-
     \section{Additional Experience \& Skills}
         \begin{onecolentry}
             \begin{highlights}
@@ -295,10 +291,20 @@
         \end{onecolentry}
         \vspace{0.2 cm}
         \begin{onecolentry}
-            \textbf{Technical skills:} Python (PyTorch, JAX), Git, Bash, SLURM, Linux/HPC environments, C{+\!+} (basic), \LaTeX.
+            \textbf{Technical skills:} Python (PyTorch, JAX, Matplotlib, Pandas, Seaborn, Scikit-Learn, SciPy, NumPy, WandB), Git, Bash, SLURM, Linux/HPC environments,  \LaTeX, C{+\!+} (basic).
         \end{onecolentry}
         \vspace{0.05 cm}
         \begin{onecolentry}
             \textbf{Languages:} English (fluent), French (intermediate), Russian (native). 
+        \end{onecolentry}
+    
+
+    \section{Publications}
+        \begin{onecolentry}
+            \begin{highlightsforbulletentries}
+                \item[[1\hspace{-0.5em}]] \bibentry{cesarLearningWhereSimulateGenerative2026} \hrefWithoutArrow{https://arxiv.org/pdf/2606.09949}{[preprint]}
+                \item[[2\hspace{-0.5em}]] \bibentry{dymchenkoMelissaDLBreedDataEfficient2024} \hrefWithoutArrow{https://hal.science/hal-04712480/}{[paper]} \hrefWithoutArrow{https://youtu.be/WUfa6SunwGc?si=zjwIf1VKYd00T9lH}{[video]}
+                \item[[3\hspace{-0.5em}]] \bibentry{dymchenkoLossdrivenSamplingHardtolearn2023} \hrefWithoutArrow{https://hal.science/hal-04305233/}{[paper]}
+            \end{highlightsforbulletentries}
         \end{onecolentry}
 \end{document}
