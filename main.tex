@@ -178,11 +178,11 @@
         \mbox{\hrefWithoutArrow{https://svdcvt.github.io}{svdcvt.github.io}}%
     \end{header}
 
-    \vspace{5 pt - 0.3 cm}
+    \vspace{5 pt}% - 0.3 cm}
 
-    \section{Summary}
-    Applied researcher in \textbf{AI for Science and HPC}, specialising in data-driven surrogate modelling for scientific computing from data-centric and compute efficiency perspectives (\textbf{active learning, PINNs, distributed streamed training, foundation models}). 
-
+    % \section{Summary}
+    % Applied researcher in \textbf{AI for Science and HPC}, specialising in data-driven surrogate modelling for scientific computing from data-centric and compute efficiency perspectives (\textbf{active learning, PINNs, distributed streamed training, foundation models}). 
+    \textbf{Summary.} Applied Scientist with PhD in Computer Science, specialising in deep learning for scientific computing, data-centric machine learning, and high-performance computing (HPC), with publications at NeurIPS. Experience in engineering research software, designing and conducting extensive experiments, supervising small teams, and communicating with technical and non-technical audiences. 
     \section{Work Experience}
 
         \begin{twocolentry}{Mar 2022 -- Apr 2026}
@@ -192,11 +192,12 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Pioneered a research line on query-synthetic active learning for online training of deep PDE surrogates, contributing to the active sampling branch of \hrefWithoutArrow{https://gitlab.inria.fr/melissa/melissa}{Melissa}, an open-source HPC\&AI framework.
-                \item Designed and implemented method Breed [2] that improves generalisation of a data-driven surrogate under limited computed budget by asynchronously curating data generation during training, experiments showing up to a magnitude lower maximum and average errors for 1D Kuramoto-Sivashinsky PDEs; orchestrated large-scale GPU training runs on Leonardo supercomputer.
-                \item Proposed online generative active learning and contributed to diffusion-based OGAS method [1], which lowers high-percentile errors by up to 2x, outperforming pool-based baselines for transformer-based and neural operator surrogates on various 2D PDEs at 256$^2$ spatial resolution, e.g., Navier-Stokes.
-                \item Introduced an active sampling method for PINNs training [3], which outperformed prior baselines by reducing training time by up tp 5x and lowering average errors by up to 2x for 1D Allen-Cahn PDE.
-                \item Supervised 2 engineers and 2 master's students contributing to the Melissa framework, including project on online pretraining of foundation models for PDE surrogates.
+                \item Pioneered a research line on query-synthetic active learning for deep PDE surrogates; initiated and led the development of the active sampling branch of \hrefWithoutArrow{https://melissa.gitlabpages.inria.fr/melissa/}{Melissa}, an open-source HPC/AI framework.
+                \item Designed and implemented Breed [2, 3] for on-the-fly simulation data curation; achieved up to 10x lower surrogate errors under fixed compute budgets; orchestrated GPU/CPU experiments on Leonardo supercomputer.
+                \item Extended this approach with generative modelling: conceived and co-developed scalable diffusion-based OGAS method [1] applied to conditional transformer-based surrogates and neural operators on 2D PDEs.
+                \item Supervised two engineers and two MSc students on Melissa R\&D, including work on online pretraining of foundation models for PDE surrogates.
+                % \item Supervised 2 engineers and 2 master's students contributing to the Melissa framework, including project on online pretraining of foundation models for PDE surrogates.
+                % \item Introduced an active sampling method for PINNs training [3], which outperformed prior baselines by reducing training time by up tp 5x and lowering average errors by up to 2x for 1D Allen-Cahn PDE.
                 % \item Contributed to an open-source HPC\&AI framework \hrefWithoutArrow{https://gitlab.inria.fr/melissa/melissa}{Melissa}; supervised 2 engineers and 2 master's students contributing to the project.
                 % \item Developed active learning methods for deep PDE surrogates: an offline PINN training strategy that outperformed prior baselines [3], and a pioneering online framework that improves generalisation of a data-driven surrogate by curating data during training [1,2]. 
                 % \item Publications: 2 first-author workshop papers (NeurIPS'23, SC'24), 1 under review.
@@ -209,7 +210,7 @@
             \textbf{Research Intern}, Moscow, Russia
         \end{twocolentry}
         Computational Intelligence Lab, Skolkovo Institute of Science and Technology (Skoltech)
-        \vspace{0.05 cm}
+        \vspace{0.01 cm}
         \begin{onecolentry}
             \begin{highlights}
                 \item Extended master's thesis work on optimal transport to computational geometry and computer vision.
@@ -222,10 +223,10 @@
             \textbf{Research Intern}, Moscow, Russia
         \end{twocolentry}
         Media Algorithms Laboratory, Huawei R\&D Center
-        \vspace{0.05 cm}
+        \vspace{0.01 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Trained generative attention models for personalized noise reduction in audio.
+                \item Trained generative deep learning models with attention for personalized noise reduction in audio signals.
             \end{highlights}
         \end{onecolentry}
 
@@ -241,6 +242,7 @@
 %             \item Taught seminars in Data Science, Machine Learning, and Python for bachelor, master, and professional development students at HSE (2019-2021) and UGA (2022-2024).
 %         \end{highlights}
 %     \end{onecolentry}
+
     \section{Education}
 
         \begin{twocolentry}{Mar 2022 -- Apr 2026}
@@ -251,7 +253,6 @@
         \begin{onecolentry}
             \begin{highlights}
                 \item Thesis: High Performance Online Deep Neural Network Training from Synthetic Data with Active Learning for Scientific Computing. The manuscript is rated ``Outstanding'' (top 5\%) by an external reviewer \href{https://svdcvt.github.io/phddefence/}{[link]}.
-                % \item Research focus: AI4Science and HPC, physics-informed neural networks, data-centric AI.
             \end{highlights}
         \end{onecolentry}
         \vspace{0.1 cm}
@@ -259,13 +260,13 @@
         \begin{twocolentry}{Sep 2019 -- Jun 2021}
             \textbf{MSc in Applied Mathematics and Computer Science}, Moscow, Russia
         \end{twocolentry}
-        Statistical Learning Theory program, Skoltech jointly with HSE (with honors, GPA: 4.89/5)
+        Statistical Learning Theory program, Skoltech jointly with HSE; with honors, GPA: 4.89/5
         \vspace{0.05 cm}
         \begin{onecolentry}
             \begin{highlights}
-                % \item Led hackathon-winning university DS projects for industrial partners (Sberbank, Tinkoff bank, McKinsey).
-                \item Thesis: Developed modified optimal transport algorithm reducing complexity from quadratic to log-linear, applied to computational mesh generation
+                \item Implemented a modified optimal transport algorithm, with complexity reduced from quadratic to log-linear, and its application to computational mesh generation
                  \hrefWithoutArrow{https://drive.google.com/drive/folders/17uK18UkpTXBUYaWh4q8fphDWdXxe_M9z?usp=drive_link}{[link]}.
+                \item Managed team delivery of winning data science solutions for marketing applications, from initial concept to final presentation, in industry-supported university hackathons.
             \end{highlights}
         \end{onecolentry}
 
@@ -274,7 +275,7 @@
         \begin{twocolentry}{Sep 2015 -- Jun 2019}
             \textbf{BSc in Mathematics}, Moscow, Russia
         \end{twocolentry}
-            Faculty of Mathematics, HSE (GPA: 7.87/10); Minor in Data Science, Faculty of Computer Science, HSE
+            National Research University Higher School of Economics (HSE), GPA: 7.87/10; Minor in Data Science
         % \vspace{0.05 cm}
         % \begin{onecolentry}
         %     \begin{highlights}
@@ -282,22 +283,29 @@
         %     \end{highlights}
         % \end{onecolentry}
 
+
     \section{Additional Experience \& Skills}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Teaching (2019--2024): led Python course (3 years, 100+ students) incl. curriculum, TA supervision, lectures, ``Best Course'' award (2020); taught Data Science/ML seminars (HSE, UGA).
-                \item Academic \& community service: on-site organisation and outreach for Grenoble AI for Physical Sciences workshop \hrefWithoutArrow{https://gap2024.sciencesconf.org}{[2024]}\hrefWithoutArrow{https://indico.math.cnrs.fr/event/15724/}{[2026]}; reviewer for Workshop on Advancing Neural Network Training (NeurIPS'23, ICML'24); member of doctoral school student council (UGA), laboratory synergy (LIG); animal protection associations volunteer.
-            \end{highlights} 
-        \end{onecolentry}
-        \vspace{0.2 cm}
         \begin{onecolentry}
             \textbf{Technical skills:} Python (PyTorch, JAX, Matplotlib, Pandas, Seaborn, Scikit-Learn, SciPy, NumPy, WandB), Git, Bash, SLURM, Linux/HPC environments,  \LaTeX, C{+\!+} (basic).
         \end{onecolentry}
-        \vspace{0.05 cm}
+
+        \vspace{0.09 cm}
+
         \begin{onecolentry}
             \textbf{Languages:} English (fluent), French (intermediate), Russian (native). 
         \end{onecolentry}
-    
+
+        \vspace{0.09 cm}
+
+        \begin{onecolentry}
+            \textbf{Teaching} (2019--2024): led Python course (3 years, 100+ students) incl. curriculum, TA supervision, lectures, won a ``Best Course'' award (2020); taught Data Science/ML seminars to non-CS students (HSE, UGA).
+        \end{onecolentry}
+
+        \vspace{0.09 cm}
+
+        \begin{onecolentry}
+            \textbf{Academic service}: on-site organisation and outreach for GAP workshops \hrefWithoutArrow{https://gap2024.sciencesconf.org}{[2024]}\hrefWithoutArrow{https://indico.math.cnrs.fr/event/15724/}{[2026]}; reviewer for WANT workshops at NeurIPS'23, ICML'24; member of UGA doctoral school student council and LIG laboratory synergy.
+        \end{onecolentry}    
 
     \section{Publications}
         \begin{onecolentry}
